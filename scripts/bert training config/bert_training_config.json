@@ -1,0 +1,22 @@
+{
+  "model_name_or_path": "hfl/chinese-bert-wwm-ext",
+  "max_length": 512,
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "grad_accum_steps": 2,
+  "num_epochs": 15,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.2,
+  "patience": 100,
+  "seed": 42,
+  "data_dir": "data",
+  "output_dir": "models/chinese-bert-wwm-ext-lossflat-final",
+  "log_dir": "logs/chinese-bert-wwm-ext-lossflat-final",
+  "num_workers": 4,
+  "save_every_epoch": true,
+  "label_smoothing": 0.15,
+  "start_lr_ratio": 0.05,
+  "end_lr_ratio": 0.3,
+  "logit_scale": 0.85,
+  "eval_before_training": true
+}
