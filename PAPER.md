@@ -7,7 +7,7 @@
 - **Paper:** Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect
 - **Authors:** Hua Zhao, Jiapei Gu, Michelle Mingyue Gu
 - **Venue status:** Accepted to the EMNLP 2026 Main Conference
-- **Repository release:** v0.9.0 — Pre-EMNLP 2026 Main Conference Release
+- **Repository version:** v0.9.0
 - **arXiv:** https://arxiv.org/abs/2605.01017
 - **Repository:** https://github.com/zhao4hua4/XHS-SCoRE
 - **License:** CC BY-NC 4.0
@@ -61,9 +61,9 @@ The NLP question is not sentiment detection or author-intent recovery. It is whe
 
 Given a text-only Xiaohongshu post `x` and reader profile `r`, predict:
 
-\[
+```math
 y \in \{\mathrm{UPWARD},\mathrm{NEUTRAL},\mathrm{DOWNWARD}\}, \qquad p(y\mid x,r).
-\]
+```
 
 The label corresponds to the immediate first-person comparison response.
 
