@@ -7,7 +7,7 @@
 [![EMNLP 2026 Main](https://img.shields.io/badge/EMNLP%202026-Main%20Conference-1f6feb)](https://2026.emnlp.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-2605.01017-b31b1b.svg)](https://arxiv.org/abs/2605.01017)
 [![Interactive Paper](https://img.shields.io/badge/Interactive%20Paper-PAPER.md-6f42c1)](PAPER.md)
-[![Version](https://img.shields.io/badge/release-v0.9.0-2ea44f)](RELEASE_NOTES.md)
+[![Version](https://img.shields.io/badge/version-v0.9.0-2ea44f)](VERSION)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](LICENSE)
 
 > 🤖 **AI/agent entry point:** [`PAPER.md`](PAPER.md) is the complete interactive paper companion. It is also referenced by [`AGENTS.md`](AGENTS.md).
@@ -36,10 +36,6 @@ The paper shows that this reader-grounded signal is behaviorally consequential a
 - In a controlled pilot, generated posts shift perceived standing and comparison-related affect; a closed-loop check shows these scaffolded stimuli are easier to classify than natural, pragmatically mixed posts.
 
 > **Toward Reader-Grounded NLP.** XHS-SCoRE treats observed reader response as constitutive of the prediction target rather than noise around a reader-independent text label. We use *reader-grounded* for the task family, *reader-perceived* for the comparison-direction label, *reader-relational* for the reader–poster relation, and *reader-group-conditioned* for the present operationalisation.
-
-<p align="center">
-  <img src="stimuli-screenshot.png" width="760" alt="XHS-SCoRE human-study reading interface" />
-</p>
 
 ## Repository contents
 
