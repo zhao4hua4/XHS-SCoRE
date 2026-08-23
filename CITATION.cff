@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use XHS-SCoRE, please cite the arXiv preprint."
+title: "Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect"
+type: dataset
+version: 0.9.0
+authors:
+  - family-names: Zhao
+    given-names: Hua
+  - family-names: Gu
+    given-names: Jiapei
+  - family-names: Gu
+    given-names: Michelle Mingyue
+repository-code: "https://github.com/zhao4hua4/XHS-SCoRE"
+url: "https://arxiv.org/abs/2605.01017"
+license: CC-BY-NC-4.0
+keywords:
+  - reader-grounded NLP
+  - social comparison
+  - LLM evaluation
+  - computational social science
+  - Chinese social media
+  - Xiaohongshu
+preferred-citation:
+  type: article
+  title: "Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect"
+  authors:
+    - family-names: Zhao
+      given-names: Hua
+    - family-names: Gu
+      given-names: Jiapei
+    - family-names: Gu
+      given-names: Michelle Mingyue
+  year: 2026
+  journal: arXiv
+  identifiers:
+    - type: doi
+      value: 10.48550/arXiv.2605.01017
+  url: "https://arxiv.org/abs/2605.01017"
