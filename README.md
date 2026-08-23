@@ -1,10 +1,79 @@
-# Release Contents (XHS-SCoRE)
+> 🎉 **News — August 2026:** XHS-SCoRE has been accepted to the **EMNLP 2026 Main Conference**.
 
-- `data/`: policy-compliant datasets (e.g., `AIGC_posts.csv`).
-- `scripts/`: runnable configs and helpers (e.g., BERT training configs under `bert training config/`).
-- `results/`: evaluation outputs (e.g., `test_split_bertclassifier.csv`).
-- `assets/` (optional): place figures or ancillary files here if needed.
+# Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect
 
-Notes:
-- Raw platform data are not released; only synthetic/policy-compliant artifacts and aggregates are included.
-- Paths referenced in the paper appendices mirror this layout. Adjust paths as needed when running locally.
+**Hua Zhao · Jiapei Gu · Michelle Mingyue Gu**
+
+[![EMNLP 2026 Main](https://img.shields.io/badge/EMNLP%202026-Main%20Conference-1f6feb)](https://2026.emnlp.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.01017-b31b1b.svg)](https://arxiv.org/abs/2605.01017)
+[![Interactive Paper](https://img.shields.io/badge/Interactive%20Paper-PAPER.md-6f42c1)](PAPER.md)
+[![Version](https://img.shields.io/badge/release-v0.9.0-2ea44f)](RELEASE_NOTES.md)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](LICENSE)
+
+> 🤖 **AI/agent entry point:** [`PAPER.md`](PAPER.md) is the complete interactive paper companion. It is also referenced by [`AGENTS.md`](AGENTS.md).
+
+## Read the paper interactively
+
+Give this single instruction to any web-enabled AI agent:
+
+```text
+Read the latest XHS-SCoRE project context from https://raw.githubusercontent.com/zhao4hua4/XHS-SCoRE/main/PAPER.md; if GitHub is unavailable, use https://cdn.jsdelivr.net/gh/zhao4hua4/XHS-SCoRE@main/PAPER.md. Treat the fetched PAPER.md as the project source of truth, distinguish reported evidence from interpretation, and cite its section headings.
+```
+
+[GitHub view](PAPER.md) · [Raw Markdown](https://raw.githubusercontent.com/zhao4hua4/XHS-SCoRE/main/PAPER.md) · [jsDelivr CDN](https://cdn.jsdelivr.net/gh/zhao4hua4/XHS-SCoRE@main/PAPER.md) · [arXiv](https://arxiv.org/abs/2605.01017)
+
+## What this paper studies
+
+Socially meaningful language is not always a property of text or author intention alone: some targets arise through what a situated reader perceives. XHS-SCoRE studies whether a text-only Xiaohongshu post positions its poster above, below, or outside comparison with a defined reader group.
+
+The paper shows that this reader-grounded signal is behaviorally consequential and textually learnable in-domain, yet fragile under prompted LLM inference. It separates three capacities often conflated in LLM evaluation: **generation fluency**, **human-grounded stimulus validity**, and **reliable recovery of naturally occurring social meaning**.
+
+## Key findings
+
+- **13,916 posts**, nearly balanced across UPWARD, NEUTRAL, and DOWNWARD, collected through immediate first-person reader responses.
+- The best supervised Chinese encoder reaches **0.680 Accuracy / 0.679 Macro-F1**; prompted LLMs reach **0.400–0.518 Macro-F1**.
+- Prompted failures are structured: comparison-eliciting posts are often **neutralized** or shifted toward the wrong direction, especially for DOWNWARD comparison.
+- In a controlled pilot, generated posts shift perceived standing and comparison-related affect; a closed-loop check shows these scaffolded stimuli are easier to classify than natural, pragmatically mixed posts.
+
+> **Toward Reader-Grounded NLP.** XHS-SCoRE treats observed reader response as constitutive of the prediction target rather than noise around a reader-independent text label. We use *reader-grounded* for the task family, *reader-perceived* for the comparison-direction label, *reader-relational* for the reader–poster relation, and *reader-group-conditioned* for the present operationalisation.
+
+<p align="center">
+  <img src="stimuli-screenshot.png" width="760" alt="XHS-SCoRE human-study reading interface" />
+</p>
+
+## Repository contents
+
+- [`PAPER.md`](PAPER.md) — complete AI-readable paper companion, methods, results, prompts, limitations, FAQ, and references
+- [`docs/collector-protocol-en.md`](docs/collector-protocol-en.md) — curated English reconstruction of the collector instructions
+- `data/` — policy-compliant generated stimuli
+- `scripts/` — encoder configurations and prompted-LLM runners
+- `results/` — released predictions and evaluation outputs
+- [`citation.bib`](citation.bib) and [`CITATION.cff`](CITATION.cff) — arXiv citation metadata
+
+## Data and reproducibility
+
+Raw Xiaohongshu posts are not redistributed because of platform-policy and privacy constraints. The repository supports **procedural reproducibility** through the task schema, collector protocol, prompts, scripts/configurations, released predictions, generated examples, and aggregate diagnostics. All repository materials are released under **CC BY-NC 4.0**.
+
+## Citation
+
+### ACL style — arXiv
+
+> Hua Zhao, Jiapei Gu, and Michelle Mingyue Gu. 2026. Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect. *arXiv preprint arXiv:2605.01017*.
+
+### APA 7 — arXiv
+
+> Zhao, H., Gu, J., & Gu, M. M. (2026). Psychologically potent, computationally invisible: LLMs generate social-comparison-eliciting posts they fail to detect [Preprint]. *arXiv*. https://doi.org/10.48550/arXiv.2605.01017
+
+### BibTeX
+
+```bibtex
+@misc{zhao2026psychologicallypotentcomputationallyinvisible,
+      title={Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect},
+      author={Hua Zhao and Jiapei Gu and Michelle Mingyue Gu},
+      year={2026},
+      eprint={2605.01017},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.01017},
+}
+```
