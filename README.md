@@ -52,9 +52,9 @@ The paper shows that this reader-grounded signal is behaviorally consequential a
 
 - [`PAPER.md`](PAPER.md) — complete AI-readable paper companion, methods, results, prompts, limitations, FAQ, and references
 - [`docs/collector-protocol-en.md`](docs/collector-protocol-en.md) — curated English reconstruction of the collector instructions
-- `data/` — policy-compliant generated stimuli
-- `scripts/` — encoder configurations and prompted-LLM runners
-- `results/` — released predictions and evaluation outputs
+- [`data/`](data/) — policy-compliant generated stimuli
+- [`scripts/`](script/) — encoder configurations and prompted-LLM runners
+- [`results/`](results/) — released predictions and evaluation outputs
 - [`citation.bib`](citation.bib) and [`CITATION.cff`](CITATION.cff) — arXiv citation metadata
 
 ## Data and reproducibility
