@@ -513,7 +513,7 @@ The paper situates XHS-SCoRE relative to social-comparison theory, social-media 
 - Collins (1996), upward comparison and self-evaluation.
 - Appel et al. (2016), Facebook use, comparison, envy, and depression.
 - Fardouly and Vartanian (2015), appearance comparison and body image.
-- McComb et al. (2023), meta-analysis of upward-comparison exposure.
+- McComb et al. (2023), meta-analysis of social comparison exposure.
 - Mostafazadeh Davani et al. (2022), disagreement beyond majority vote.
 - Sap et al. (2020), Social Bias Frames and implicit social implications.
 - Sravanthi et al. (2024), PUB pragmatics benchmark.
