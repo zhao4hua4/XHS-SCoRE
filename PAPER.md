@@ -111,7 +111,7 @@ The single-collector immediate-response design preserves the reading event rathe
 | Human UPWARD → NEUTRAL re-labeling | 20.4% |
 | Human DOWNWARD → NEUTRAL re-labeling | 17.0% |
 
-The in-group exercise used a randomized set of 210 posts and two additional raters from the target population: both female, mean age 21.50, native Chinese, young-adult active Xiaohongshu users. These results calibrate the target; they do not overwrite the original immediate-response labels.
+The in-group exercise used a randomized set of 210 unique posts and two additional raters from the target population: both female, mean age 21.50, native Chinese, young-adult active Xiaohongshu users. Each rater completed 253 trials: the 210 unique posts, 10 same-session repeats used as attention checks (all consistent), and 33 repeats administered after at least 24 hours. Raw agreement with the original immediate-response labels was calculated over all 253 trials, while within-person stability was calculated over the 33 delayed repeats. These results calibrate the target; they do not overwrite the original immediate-response labels.
 
 ## 4.4 Size and fixed splits
 
@@ -328,8 +328,6 @@ GPT-4.1 nano generated Xiaohongshu-style stimuli under corpus-derived constraint
 - passive constructions and low-agency/victim positioning;
 - explicit contrasts in which others are better off than the poster;
 - minor language and punctuation errors for platform-like naturalness.
-
-An additional product-advertisement item with no personal affect was requested as a non-comparison control.
 
 ## 9.2 UPWARD generation recipe
 
