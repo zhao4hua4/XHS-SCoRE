@@ -274,10 +274,10 @@ Two additional full reruns were conducted for each primary zero-shot model. Agre
 
 | Model | Rerun 1 agreement | Rerun 2 agreement | Mean agreement | Mean absolute confusion drift | SD confusion drift |
 |---|---:|---:|---:|---:|---:|
-| Qwen3-235B | 97.33% | 97.33% | 97.33% | 0.67 pp | 0.94 pp |
-| Qwen3-30B | 91.00% | 91.00% | 91.00% | 2.33 pp | 3.09 pp |
-| GPT-5 | 90.67% | 92.33% | 91.50% | 1.67 pp | 2.00 pp |
-| GPT-4.1-nano | 93.33% | 94.33% | 93.83% | 1.89 pp | 2.38 pp |
+| Qwen3-235B | 97.34% | 97.34% | 97.34% | 0.67 pp | 0.94 pp |
+| Qwen3-30B | 91.02% | 91.02% | 91.02% | 2.33 pp | 3.09 pp |
+| GPT-5 | 90.66% | 92.35% | 91.50% | 1.67 pp | 2.00 pp |
+| GPT-4.1-nano | 93.32% | 94.32% | 93.82% | 1.89 pp | 2.38 pp |
 
 The low drift indicates that the qualitative error profiles are stable properties of the tested zero-shot configuration rather than one-off sampling noise.
 
@@ -306,12 +306,12 @@ Prompted models:
 | GPT-4.1-nano D→N | 50.4 | 65.8 | 72.0 | 57.8 |
 | Qwen3-235B F1 | 48.0 | 46.0 | 51.4 | 54.8 |
 | Qwen3-235B PredN | 42.5 | 66.7 | 54.5 | 30.8 |
-| Qwen3-235B U→N | 29.6 | 50.7 | 44.8 | 24.6 |
+| Qwen3-235B U→N | 29.6 | 50.6 | 44.8 | 24.6 |
 | Qwen3-235B D→N | 45.8 | 68.0 | 49.0 | 24.0 |
 | Qwen3-30B F1 | 40.0 | 47.8 | 46.9 | 53.7 |
 | Qwen3-30B PredN | 65.9 | 49.1 | 39.7 | 28.0 |
 | Qwen3-30B U→N | 62.1 | 40.6 | 31.2 | 25.7 |
-| Qwen3-30B D→N | 60.7 | 46.1 | 36.5 | 19.6 |
+| Qwen3-30B D→N | 60.7 | 46.1 | 36.5 | 19.5 |
 
 Cue-explicit prompting is the strongest tested prompt condition for several models and can sharply reduce neutralization, but it depends on substantial corpus-derived scaffolding and still trails the supervised encoder. Persona and few-shot prompting do not reliably remove the failure pattern.
 
