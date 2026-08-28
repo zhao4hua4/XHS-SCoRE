@@ -1,0 +1,73 @@
+name: Apply PAPER.md calibration clarification
+
+on:
+  push:
+    branches:
+      - clarify-paper-md-calibration
+
+permissions:
+  contents: write
+
+jobs:
+  patch-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out clarification branch
+        uses: actions/checkout@v4
+        with:
+          ref: clarify-paper-md-calibration
+
+      - name: Clarify calibration trials and remove testing-only prompt note
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          paper = Path("PAPER.md")
+          text = paper.read_text(encoding="utf-8")
+
+          old_calibration = (
+              "The in-group exercise used a randomized set of 210 posts and two additional raters "
+              "from the target population: both female, mean age 21.50, native Chinese, young-adult "
+              "active Xiaohongshu users. These results calibrate the target; they do not overwrite "
+              "the original immediate-response labels."
+          )
+          new_calibration = (
+              "The in-group exercise used a randomized set of 210 unique posts and two additional "
+              "raters from the target population: both female, mean age 21.50, native Chinese, "
+              "young-adult active Xiaohongshu users. Each rater completed 253 trials: the 210 unique "
+              "posts, 10 same-session repeats used as attention checks (all consistent), and 33 "
+              "repeats administered after at least 24 hours. Raw agreement with the original "
+              "immediate-response labels was calculated over all 253 trials, while within-person "
+              "stability was calculated over the 33 delayed repeats. These results calibrate the "
+              "target; they do not overwrite the original immediate-response labels."
+          )
+
+          if text.count(old_calibration) != 1:
+              raise SystemExit(
+                  f"Expected exactly one calibration paragraph, found {text.count(old_calibration)}"
+              )
+          text = text.replace(old_calibration, new_calibration)
+
+          old_prompt_note = (
+              "\n\nAn additional product-advertisement item with no personal affect was requested "
+              "as a non-comparison control.\n"
+          )
+          if text.count(old_prompt_note) != 1:
+              raise SystemExit(
+                  f"Expected exactly one testing-only prompt note, found {text.count(old_prompt_note)}"
+              )
+          text = text.replace(old_prompt_note, "\n")
+
+          paper.write_text(text, encoding="utf-8")
+          Path(".github/workflows/apply-paper-calibration-fixes.yml").unlink()
+          PY
+
+      - name: Commit clarified PAPER.md
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add PAPER.md .github/workflows/apply-paper-calibration-fixes.yml
+          git commit -m "Clarify calibration trials and remove testing-only prompt note"
+          git push origin HEAD:clarify-paper-md-calibration
