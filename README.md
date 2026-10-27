@@ -1,10 +1,11 @@
-> 🎉 **News — August 2026:** XHS-SCoRE has been accepted to the **EMNLP 2026 Main Conference**.
+> 🎉 **News — October 2026:** XHS-SCoRE is published in the **EMNLP 2026 Main Conference** proceedings ([ACL Anthology](https://aclanthology.org/2026.emnlp-main.379/)).
 
 # Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect
 
 **Hua Zhao · Jiapei Gu · Michelle Mingyue Gu**
 
 [![EMNLP 2026 Main](https://img.shields.io/badge/EMNLP%202026-Main%20Conference-1f6feb)](https://2026.emnlp.org/)
+[![ACL Anthology](https://img.shields.io/badge/ACL%20Anthology-EMNLP%202026-1f6feb)](https://aclanthology.org/2026.emnlp-main.379/)
 [![arXiv](https://img.shields.io/badge/arXiv-2605.01017-b31b1b.svg)](https://arxiv.org/abs/2605.01017)
 [![Interactive Paper](https://img.shields.io/badge/Interactive%20Paper-PAPER.md-6f42c1)](PAPER.md)
 [![Version](https://img.shields.io/badge/version-v0.9.0-2ea44f)](VERSION)
@@ -20,7 +21,7 @@ Give this single instruction to any web-enabled AI agent:
 Read the latest XHS-SCoRE project context from https://raw.githubusercontent.com/zhao4hua4/XHS-SCoRE/main/PAPER.md; if GitHub is unavailable, use https://cdn.jsdelivr.net/gh/zhao4hua4/XHS-SCoRE@main/PAPER.md. Treat the fetched PAPER.md as the project source of truth, distinguish reported evidence from interpretation, and cite its section headings.
 ```
 
-[GitHub view](PAPER.md) · [Raw Markdown](https://raw.githubusercontent.com/zhao4hua4/XHS-SCoRE/main/PAPER.md) · [jsDelivr CDN](https://cdn.jsdelivr.net/gh/zhao4hua4/XHS-SCoRE@main/PAPER.md) · [arXiv](https://arxiv.org/abs/2605.01017)
+[ACL Anthology (published paper)](https://aclanthology.org/2026.emnlp-main.379/) · [GitHub view](PAPER.md) · [Raw Markdown](https://raw.githubusercontent.com/zhao4hua4/XHS-SCoRE/main/PAPER.md) · [jsDelivr CDN](https://cdn.jsdelivr.net/gh/zhao4hua4/XHS-SCoRE@main/PAPER.md) · [arXiv](https://arxiv.org/abs/2605.01017)
 
 ## What this paper studies
 
@@ -55,7 +56,7 @@ The paper shows that this reader-grounded signal is behaviorally consequential a
 - [`data/`](data/) — policy-compliant generated stimuli
 - [`scripts/`](scripts/) — encoder configurations and prompted-LLM runners
 - [`results/`](results/) — released predictions and evaluation outputs
-- [`citation.bib`](citation.bib) and [`CITATION.cff`](CITATION.cff) — arXiv citation metadata
+- [`citation.bib`](citation.bib) and [`CITATION.cff`](CITATION.cff) — published EMNLP 2026 proceedings citation metadata
 
 ## Data and reproducibility
 
@@ -63,24 +64,39 @@ Raw Xiaohongshu posts are not redistributed because of platform-policy and priva
 
 ## Citation
 
-### ACL style — arXiv
+Cite the published **EMNLP 2026 Main Conference** proceedings paper: [ACL Anthology](https://aclanthology.org/2026.emnlp-main.379/). The [arXiv preprint](https://arxiv.org/abs/2605.01017) is also available.
 
-> Hua Zhao, Jiapei Gu, and Michelle Mingyue Gu. 2026. Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect. *arXiv preprint arXiv:2605.01017*.
+### ACL style — EMNLP 2026
 
-### APA 7 — arXiv
+```text
+Hua Zhao, Jiapei Gu, and Michelle Mingyue Gu. 2026. Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect. In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing, pages 8659–8678, Budapest, Hungary. Association for Computational Linguistics.
+```
 
-> Zhao, H., Gu, J., & Gu, M. M. (2026). Psychologically potent, computationally invisible: LLMs generate social-comparison-eliciting posts they fail to detect [Preprint]. *arXiv*. https://doi.org/10.48550/arXiv.2605.01017
+### APA 7 — EMNLP 2026
 
-### BibTeX
+```text
+Zhao, H., Gu, J., & Gu, M. M. (2026). Psychologically potent, computationally invisible: LLMs generate social-comparison-eliciting posts they fail to detect. In H.-Y. Lee, S. Dev, J. Li, & D. Elliott (Eds.), Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (pp. 8659–8678). Association for Computational Linguistics. https://aclanthology.org/2026.emnlp-main.379/
+```
+
+### BibTeX — ACL Anthology
 
 ```bibtex
-@misc{zhao2026psychologicallypotentcomputationallyinvisible,
-      title={Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect},
-      author={Hua Zhao and Jiapei Gu and Michelle Mingyue Gu},
-      year={2026},
-      eprint={2605.01017},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2605.01017},
+@inproceedings{zhao-etal-2026-psychologically,
+    title = "Psychologically Potent, Computationally Invisible: {LLM}s Generate Social-Comparison-Eliciting Posts They Fail to Detect",
+    author = "Zhao, Hua  and
+      Gu, Jiapei  and
+      Gu, Michelle Mingyue",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.379/",
+    pages = "8659--8678",
+    ISBN = "979-8-89176-459-0",
 }
 ```

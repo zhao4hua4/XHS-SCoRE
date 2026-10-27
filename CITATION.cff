@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use XHS-SCoRE, please cite the arXiv preprint."
+message: "If you use XHS-SCoRE, please cite the published EMNLP 2026 proceedings paper."
 title: "Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect"
 type: dataset
 version: 0.9.0
@@ -11,7 +11,7 @@ authors:
   - family-names: Gu
     given-names: Michelle Mingyue
 repository-code: "https://github.com/zhao4hua4/XHS-SCoRE"
-url: "https://arxiv.org/abs/2605.01017"
+url: "https://aclanthology.org/2026.emnlp-main.379/"
 license: CC-BY-NC-4.0
 keywords:
   - reader-grounded NLP
@@ -21,7 +21,7 @@ keywords:
   - Chinese social media
   - Xiaohongshu
 preferred-citation:
-  type: article
+  type: conference-paper
   title: "Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect"
   authors:
     - family-names: Zhao
@@ -30,9 +30,24 @@ preferred-citation:
       given-names: Jiapei
     - family-names: Gu
       given-names: Michelle Mingyue
+  editors:
+    - family-names: Lee
+      given-names: Hung-Yi
+    - family-names: Dev
+      given-names: Sunipa
+    - family-names: Li
+      given-names: Jessy
+    - family-names: Elliott
+      given-names: Desmond
   year: 2026
-  journal: arXiv
-  identifiers:
-    - type: doi
-      value: 10.48550/arXiv.2605.01017
-  url: "https://arxiv.org/abs/2605.01017"
+  month: 10
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  conference:
+    name: "2026 Conference on Empirical Methods in Natural Language Processing"
+    location: "Budapest, Hungary"
+  publisher:
+    name: "Association for Computational Linguistics"
+  start: 8659
+  end: 8678
+  isbn: "979-8-89176-459-0"
+  url: "https://aclanthology.org/2026.emnlp-main.379/"

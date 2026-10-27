@@ -6,9 +6,10 @@
 
 - **Paper:** Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect
 - **Authors:** Hua Zhao, Jiapei Gu, Michelle Mingyue Gu
-- **Venue status:** Accepted to the EMNLP 2026 Main Conference
+- **Venue:** Published in the EMNLP 2026 Main Conference proceedings, pages 8659–8678
 - **Repository version:** v0.9.0
-- **arXiv:** https://arxiv.org/abs/2605.01017
+- **ACL Anthology:** https://aclanthology.org/2026.emnlp-main.379/
+- **arXiv preprint:** https://arxiv.org/abs/2605.01017
 - **Repository:** https://github.com/zhao4hua4/XHS-SCoRE
 - **License:** CC BY-NC 4.0
 
@@ -440,7 +441,7 @@ The repository supports **procedural reproducibility**, not reproduction of the 
 | `videoinstruction.md` | Original machine-transcribed Chinese collector instructions |
 | `docs/collector-protocol-en.md` | Curated English collector protocol |
 | `PAPER.md` | Interactive paper companion |
-| `citation.bib`, `CITATION.cff` | arXiv citation metadata |
+| `citation.bib`, `CITATION.cff` | EMNLP 2026 proceedings citation metadata |
 
 Raw Xiaohongshu posts are not released. Researchers can instantiate the same workflow with a new policy-compliant sample, another reader population, or another platform while preserving the distinction among original reader responses, calibration checks, model predictions, and aggregate analyses.
 
@@ -480,25 +481,40 @@ A task family in which observed reader interpretation, appraisal, affect, or beh
 
 # 18. Citation
 
-## ACL style — arXiv
+The following citations refer to the published **EMNLP 2026 Main Conference** paper in the [ACL Anthology](https://aclanthology.org/2026.emnlp-main.379/). The [arXiv preprint](https://arxiv.org/abs/2605.01017) remains available separately.
 
-Hua Zhao, Jiapei Gu, and Michelle Mingyue Gu. 2026. Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect. *arXiv preprint arXiv:2605.01017*.
+## ACL style — EMNLP 2026
 
-## APA 7 — arXiv
+```text
+Hua Zhao, Jiapei Gu, and Michelle Mingyue Gu. 2026. Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect. In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing, pages 8659–8678, Budapest, Hungary. Association for Computational Linguistics.
+```
 
-Zhao, H., Gu, J., & Gu, M. M. (2026). Psychologically potent, computationally invisible: LLMs generate social-comparison-eliciting posts they fail to detect [Preprint]. *arXiv*. https://doi.org/10.48550/arXiv.2605.01017
+## APA 7 — EMNLP 2026
 
-## BibTeX
+```text
+Zhao, H., Gu, J., & Gu, M. M. (2026). Psychologically potent, computationally invisible: LLMs generate social-comparison-eliciting posts they fail to detect. In H.-Y. Lee, S. Dev, J. Li, & D. Elliott (Eds.), Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (pp. 8659–8678). Association for Computational Linguistics. https://aclanthology.org/2026.emnlp-main.379/
+```
+
+## BibTeX — ACL Anthology
 
 ```bibtex
-@misc{zhao2026psychologicallypotentcomputationallyinvisible,
-      title={Psychologically Potent, Computationally Invisible: LLMs Generate Social-Comparison-Eliciting Posts They Fail to Detect},
-      author={Hua Zhao and Jiapei Gu and Michelle Mingyue Gu},
-      year={2026},
-      eprint={2605.01017},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2605.01017},
+@inproceedings{zhao-etal-2026-psychologically,
+    title = "Psychologically Potent, Computationally Invisible: {LLM}s Generate Social-Comparison-Eliciting Posts They Fail to Detect",
+    author = "Zhao, Hua  and
+      Gu, Jiapei  and
+      Gu, Michelle Mingyue",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.379/",
+    pages = "8659--8678",
+    ISBN = "979-8-89176-459-0",
 }
 ```
 
@@ -521,4 +537,4 @@ The paper situates XHS-SCoRE relative to social-comparison theory, social-media 
 - Zhao et al. (2025), RedOne and domain-specific social-network post-training.
 - Gu et al. (2026), linguistic predictors of social comparison on RedNote.
 
-The complete bibliography and rendered figures are available in the arXiv PDF: https://arxiv.org/abs/2605.01017
+The published paper, including its bibliography and figures, is available as an [ACL Anthology PDF](https://aclanthology.org/2026.emnlp-main.379.pdf). The [arXiv preprint](https://arxiv.org/abs/2605.01017) is also available.
